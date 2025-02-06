@@ -1,0 +1,53 @@
+{
+    "author": "Alexandre Blondeau",
+    "description": "⚙️ A Webpack Loader for LDTK files.",
+    "engines": {
+
+        "node": "16.13.0",
+        "npm": "8.1.0"
+    },
+    "files": [
+
+        "sources/"
+    ],
+    "homepage": "https://github.com/theatrejs/loader-ldtk",
+    "keywords": [
+
+        "2d",
+        "canvas",
+        "engine",
+        "game",
+        "game-engine",
+        "html",
+        "html5",
+        "javascript",
+        "ldtk",
+        "pixel-art",
+        "loader",
+        "theatrejs",
+        "theatrejs-loader",
+        "webgl",
+        "webgl2",
+        "webpack",
+        "webpack-loader"
+    ],
+    "license": "MIT",
+    "main": "./sources/index.js",
+    "name": "@theatrejs/loader-ldtk",
+    "peerDependencies": {
+
+        "@theatrejs/plugin-ldtk": ">= 1.0.1",
+        "webpack": ">= 5.94.0"
+    },
+    "repository": {
+
+        "type": "git",
+        "url": "git+https://github.com/theatrejs/loader-ldtk.git"
+    },
+    "scripts": {
+
+        "postversion": "node ./tools/custom/postversion.cjs"
+    },
+    "type": "commonjs",
+    "version": "0.0.0"
+}
