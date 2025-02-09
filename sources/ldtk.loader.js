@@ -9,11 +9,11 @@ const webpack = require('webpack');
 module.exports = function loader() {
 
     /**
-     * @typedef {Object} typeoptions The options for the loader.
+     * @typedef {Object} TypeOptions The options for the loader.
      * @private
      */
 
-    const context = /** @type {webpack.LoaderContext<typeoptions>} */(this);
+    const context = /** @type {webpack.LoaderContext<TypeOptions>} */(this);
 
     const file = context.resourcePath;
 
