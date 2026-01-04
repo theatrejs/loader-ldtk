@@ -36,7 +36,7 @@
     "name": "@theatrejs/loader-ldtk",
     "peerDependencies": {
 
-        "@theatrejs/plugin-ldtk": ">= 1.3.0",
+        "@theatrejs/plugin-ldtk": ">= 2.0.0",
         "webpack": ">= 5.94.0"
     },
     "repository": {

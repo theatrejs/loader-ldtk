@@ -40,13 +40,8 @@ npm install @theatrejs/loader-ldtk --save-dev
 ```javascript
 import ldtk from './game.ldtk';
 
-const entities = ldtk.getEntities({
+const grid = ldtk.createGrid({
     $level: 'Prototype',
     $layer: 'actors'
-});
-
-const grid = ldtk.getGrid({
-    $level: 'Prototype',
-    $layer: 'grid'
 });
 ```
