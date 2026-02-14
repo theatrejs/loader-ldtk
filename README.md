@@ -35,13 +35,40 @@ npm install @theatrejs/loader-ldtk --save-dev
 }
 ```
 
+## Webpack Configuration (Advanced Options)
+
+```javascript
+{
+    'module': {
+        'rules': [
+            ...
+            {
+                'test': /\.ldtk$/,
+                'use': [
+                    {
+                        'loader': '@theatrejs/loader-ldtk',
+                        'options': {
+                            'constants': true // The option for generating the constants files with all the LDTK level and layer names.
+                        }
+                    }
+                ]
+            }
+            ...
+        ]
+    }
+}
+```
+
 ## Quick Start
 
 ```javascript
 import ldtk from './game.ldtk';
 
+import * as LAYERS_GAME from './layers.game.ldtk';
+import * as LEVELS_GAME from './levels.game.ldtk';
+
 const grid = ldtk.createGrid({
-    $level: 'Prototype',
-    $layer: 'actors'
+    $level: LEVELS_GAME.PROTOTYPE,
+    $layer: LAYERS_GAME.ACTORS
 });
 ```
