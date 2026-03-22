@@ -3,8 +3,8 @@
     "description": "⚙️ A Webpack Loader for LDTK files.",
     "engines": {
 
-        "node": "18.18.2",
-        "npm": "9.8.1"
+        "node": "24.14.0",
+        "npm": "11.9.0"
     },
     "files": [
 
@@ -36,7 +36,7 @@
     "name": "@theatrejs/loader-ldtk",
     "peerDependencies": {
 
-        "@theatrejs/plugin-ldtk": ">= 2.0.0",
+        "@theatrejs/plugin-ldtk": ">= 2.1.0",
         "webpack": ">= 5.94.0"
     },
     "repository": {
